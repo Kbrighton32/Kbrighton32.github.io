@@ -6,10 +6,11 @@
   <title>Video Share Site</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     header {
@@ -19,19 +20,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     #logo {
-      width: 50px; /* Adjust the size of the logo */
+      width: 40px;
       height: auto;
     }
 
     #search-bar {
       flex-grow: 1;
       margin: 0 20px;
-      padding: 8px;
+      padding: 10px;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
       font-size: 16px;
     }
 
@@ -53,6 +55,7 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       min-width: 160px;
       z-index: 1;
+      border-radius: 5px;
     }
 
     .dropdown-content a {
@@ -63,7 +66,7 @@
     }
 
     .dropdown-content a:hover {
-      background-color: #f5f5f5;
+      background-color: #f0f0f0;
     }
 
     #user-menu:hover .dropdown-content {
@@ -72,6 +75,11 @@
 
     main {
       padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -92,6 +100,7 @@
   </header>
 
   <main>
+    <h1>Welcome to Our Video Sharing Site</h1>
     <!-- Your main content goes here -->
   </main>
 
