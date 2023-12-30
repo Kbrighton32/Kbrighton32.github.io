@@ -28,16 +28,6 @@
             bottom: 0;
             width: 100%;
         }
-
-        body.dark-mode {
-            background-color: #282c35;
-            color: #fff;
-        }
-
-        body.light-mode {
-            background-color: #fff;
-            color: #333;
-        }
     </style>
 </head>
 <body>
@@ -52,36 +42,6 @@
     <footer>
         <p>&copy; 2023 Your Video Platform. All rights reserved.</p>
     </footer>
-
-    <h1>Dark/Light Mode Toggle</h1>
-
-    <button onclick="toggleMode()">Toggle Mode</button>
-
-    <div id="gear-icon" onclick="openModal()">&#9881;</div>
-
-    <div id="modal">
-        <div class="modal-content">
-            <h2>Mode Switch</h2>
-            <button onclick="toggleMode()">Toggle Mode</button>
-            <button onclick="closeModal()">Close</button>
-        </div>
-    </div>
-
-    <script>
-        function toggleMode() {
-            const body = document.body;
-            body.classList.toggle("dark-mode");
-            body.classList.toggle("light-mode");
-        }
-
-        function openModal() {
-            document.getElementById('modal').style.display = 'flex';
-        }
-
-        function closeModal() {
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
 
 </body>
 </html>
