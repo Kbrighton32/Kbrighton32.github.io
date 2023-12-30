@@ -1,16 +1,89 @@
-<body style="background-color:DimGray;">
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Upload</title>
+    <title>Your Video Sharing Website</title>
+    <!-- Add your CSS links for styling here -->
 </head>
 <body>
 
-    <h2>Upload Your Photo</h2>
+    <!-- Header Section -->
+    <header>
+        <h1>Your Video Sharing Website</h1>
+        <!-- Add branding and navigation links here -->
+    </header>
 
-    <input type="file" id="photo" name="photo" accept="image/*">
+    <!-- Main Content Section -->
+    <main>
+        <!-- Video Player -->
+        <div>
+            <video controls width="600">
+                <source src="example_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
 
+        <!-- Video Queue -->
+        <div>
+            <!-- Display a list of queued videos -->
+            <ul>
+                <li>Video 1</li>
+                <li>Video 2</li>
+                <!-- Add more queued videos dynamically -->
+            </ul>
+        </div>
+
+        <!-- Upload System -->
+        <div>
+            <!-- Add a form for video upload -->
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="videoFile">Upload Video:</label>
+                <input type="file" id="videoFile" name="videoFile" accept="video/*">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <!-- Profile System -->
+        <div>
+            <!-- Display user profile information -->
+            <h2>User Profile</h2>
+            <!-- Add more profile details, such as username, profile picture, etc. -->
+        </div>
+
+        <!-- Built-in Video Recorder (This would require JavaScript and possibly a library) -->
+        <div>
+            <!-- Display video recording interface -->
+            <!-- This may involve integrating a third-party library or using the browser's MediaRecorder API -->
+        </div>
+
+        <!-- Following/Blocking System -->
+        <div>
+            <!-- Display a list of users to follow/block -->
+            <!-- Include buttons to follow/block users -->
+        </div>
+
+        <!-- Likes System -->
+        <div>
+            <!-- Display like button and count -->
+        </div>
+
+        <!-- Comments System -->
+        <div>
+            <!-- Display comments section -->
+            <ul>
+                <li>Comment 1</li>
+                <li>Comment 2</li>
+                <!-- Add more comments dynamically -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <!-- Add footer content -->
+    </footer>
+
+    <!-- Add your JavaScript scripts here -->
 </body>
 </html>
