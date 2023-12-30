@@ -1,47 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Video Sharing Platform</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Share Site</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 0.5em 0;
-        }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    #logo {
+      width: 50px; /* Adjust the size of the logo */
+      height: auto;
+    }
+
+    #search-bar {
+      flex-grow: 1;
+      margin: 0 20px;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    #bell-icon {
+      cursor: pointer;
+      font-size: 24px;
+      margin-right: 20px;
+    }
+
+    #user-menu {
+      cursor: pointer;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f5f5f5;
+    }
+
+    #user-menu:hover .dropdown-content {
+      display: block;
+    }
+
+    main {
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Your Video Platform</h1>
-        <p>Share and Discover Amazing Videos</p>
-    </header>
+  <header>
+    <img src="path/to/logo.png" alt="Logo" id="logo">
+    <input type="text" placeholder="Search..." id="search-bar">
+    <div id="bell-icon">&#128276;</div>
+    <div id="user-menu">
+      <span>&#9776;</span>
+      <div class="dropdown-content">
+        <a href="#">Profile settings</a>
+        <a href="#">Language settings</a>
+        <a href="#">Dark/Light mode</a>
+      </div>
+    </div>
+  </header>
 
+  <main>
     <!-- Your main content goes here -->
-
-    <footer>
-        <p>&copy; 2023 Your Video Platform. All rights reserved.</p>
-    </footer>
+  </main>
 
 </body>
 </html>
