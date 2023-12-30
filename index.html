@@ -42,6 +42,72 @@
     <footer>
         <p>&copy; 2023 Your Video Platform. All rights reserved.</p>
     </footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Toggle</title>
+    <style>
+        body {
+            transition: background-color 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .dark-mode {
+            background-color: #282c35;
+            color: #fff;
+        }
+
+        .light-mode {
+            background-color: #fff;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body class="light-mode">
+
+    <h1>Dark/Light Mode Toggle</h1>
+
+    <button onclick="toggleMode()">Toggle Mode</button>
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+        }
+    </script>
+
+</body>
+</html>
+
 
 </body>
 </html>
